@@ -5,10 +5,6 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-#Dependencies
-yum install python
-easy_install pyusb
-
 cp usbnetpower8800.py /bin/power
 chmod a+x /bin/power
 cp 50-usbnetpower.rules /etc/udev/rules.d/

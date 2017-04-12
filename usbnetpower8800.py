@@ -40,7 +40,7 @@
 #  SUBSYSTEM=="usb", ATTR{idVendor}=="067b", MODE="0666", GROUP="plugdev"
 
 
-import sys
+import sys; sys.path.append('/home/linux/.local/lib/python2.7/site-packages')
 import usb.core
 import time
 
